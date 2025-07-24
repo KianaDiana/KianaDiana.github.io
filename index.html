@@ -1,1 +1,48 @@
-fuck you
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Avalon</title>
+    <style>
+        /* 基础样式 */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        img {
+            width: 300px;
+            margin: 20px;
+            cursor: pointer; /* 鼠标悬停变手型 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. 标题 -->
+    <h1>Here</h1>
+
+    <!-- 2. 图片（替换your-image.jpg为你的图片路径） -->
+    <img 
+        id="myImage" 
+        src="5da53d6217a198c66f93983b7cab14a6e723b5d2.jpg" 
+        alt="我的图片"
+        onclick="changeImage()" <!-- 点击图片触发交互 -->
+    >
+
+    <!-- 3. 交互逻辑 -->
+    <script>
+        // 点击图片切换函数
+        function changeImage() {
+            const img = document.getElementById("myImage");
+            // 如果是图片A，则切换为图片B（需准备两张图片）
+            if (img.src.includes("5da53d6217a198c66f93983b7cab14a6e723b5d2.jpg")) {
+                img.src = "1706133215_new_yalnizlik.png"; // 替换为你的第二张图片路径
+                img.alt = "另一张图片";
+            } else {
+                img.src = "5da53d6217a198c66f93983b7cab14a6e723b5d2.jpg";
+                img.alt = "我的图片";
+            }
+        }
+    </script>
+</body>
+</html>
