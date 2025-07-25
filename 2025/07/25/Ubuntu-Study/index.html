@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>Ubuntu Study | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="title: Ubuntu Studydate: 2025-07-25 11:59:44tags:Ubuntu文件管理方式和windows差异较大，类似树的形式，没有盘符ls：list，列出当前目录下的所有文件，配合参数使用，ls -aln:软链接sudo:超级用户权限cdmkdirrmdir，均用于目录rm -rf：移除目录下所有文件sudo rm -rf &#x2F;*（bushigroup">
+  <meta name="description" content="文件管理方式和windows差异较大，类似树的形式，没有盘符ls：list，列出当前目录下的所有文件，配合参数使用，ls -aln:软链接sudo:超级用户权限cdmkdirrmdir，均用于目录rm -rf：移除目录下所有文件sudo rm -rf &#x2F;*（bushigroup：用户组，没想到什么用处用户：useraddpasswduserdeltar文件：tar文件是linux中很常见">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="Ubuntu Study">
 <meta property="og:url" content="http://example.com/2025/07/25/Ubuntu-Study/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title: Ubuntu Studydate: 2025-07-25 11:59:44tags:Ubuntu文件管理方式和windows差异较大，类似树的形式，没有盘符ls：list，列出当前目录下的所有文件，配合参数使用，ls -aln:软链接sudo:超级用户权限cdmkdirrmdir，均用于目录rm -rf：移除目录下所有文件sudo rm -rf &#x2F;*（bushigroup">
+<meta property="og:description" content="文件管理方式和windows差异较大，类似树的形式，没有盘符ls：list，列出当前目录下的所有文件，配合参数使用，ls -aln:软链接sudo:超级用户权限cdmkdirrmdir，均用于目录rm -rf：移除目录下所有文件sudo rm -rf &#x2F;*（bushigroup：用户组，没想到什么用处用户：useraddpasswduserdeltar文件：tar文件是linux中很常见">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2025-07-25T03:59:44.681Z">
-<meta property="article:modified_time" content="2025-07-25T04:03:10.805Z">
+<meta property="article:published_time" content="2025-07-25T03:59:44.000Z">
+<meta property="article:modified_time" content="2025-07-25T09:52:43.289Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -76,22 +76,35 @@
         <section id="main"><article id="post-Ubuntu-Study" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2025/07/25/Ubuntu-Study/" class="article-date">
-  <time class="dt-published" datetime="2025-07-25T03:59:44.681Z" itemprop="datePublished">2025-07-25</time>
+  <time class="dt-published" datetime="2025-07-25T03:59:44.000Z" itemprop="datePublished">2025-07-25</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Ubuntu Study
+    </h1>
+  
+
+      </header>
+    
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <hr>
-<p>title: Ubuntu Study<br>date: 2025-07-25 11:59:44<br>tags:Ubuntu<br>文件管理方式和windows差异较大，类似树的形式，没有盘符<br>ls：list，列出当前目录下的所有文件，配合参数使用，ls -a<br>ln:软链接<br>sudo:超级用户权限<br>cd<br>mkdir<br>rmdir，均用于目录<br>rm -rf：移除目录下所有文件<br>sudo rm -rf &#x2F;*（bushi<br>group：用户组，没想到什么用处<br>useradd<br>passwd<br>userdel</p>
+        <p>文件管理方式和windows差异较大，类似树的形式，没有盘符<br>ls：list，列出当前目录下的所有文件，配合参数使用，ls -a<br>ln:软链接<br>sudo:超级用户权限<br>cd<br>mkdir<br>rmdir，均用于目录<br>rm -rf：移除目录下所有文件<br>sudo rm -rf &#x2F;*（bushi<br>group：用户组，没想到什么用处<br>用户：<br>useradd<br>passwd<br>userdel<br>tar文件：<br>tar文件是linux中很常见的一种文件，target表示归档，未压缩仅打包<br>.tar文件仅打包未压缩，可以使用以下命令行解包<br>1.tar -xvf name.tar<br>2.解压gz文件，.gz是单个文件压缩（没有包）<br>gzip -d name.gz<br>3.解压.tar.gz（或者.tgz)<br>最常见，tar -zxvf name.tar.gz<br>(指定目录就添加路径参数：tar -C &#x2F;file -zxvf name.tar.gz)<br>4.解压zip<br>unzip name.zip<br>unzip name.zip -d&#x2F;path<br>(需提前安装unzip工具。sudo apt-get install unzip)<br>5.5. 解压 .rar 文件</p>
+<p>.rar 格式需要额外安装工具：</p>
+<p>sudo apt-get install rar unrar<br>解压命令如下：</p>
+<p>unrar x FileName.rar</p>
+<p>改变不同用户关于文件权限：<br>chmod -a(或者u）+（或者-）权限 文件名<br>改变文件归属<br>chown 用户名 某文件（仅仅在sudo或者root下可以）</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/07/25/Ubuntu-Study/" data-id="cmdiaq7u90000s0tncyek4oq1" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/07/25/Ubuntu-Study/" data-id="cmdiaq7u90000s0tncyek4oq1" data-title="Ubuntu Study" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -142,7 +155,7 @@
       <ul>
         
           <li>
-            <a href="/2025/07/25/Ubuntu-Study/">(no title)</a>
+            <a href="/2025/07/25/Ubuntu-Study/">Ubuntu Study</a>
           </li>
         
           <li>
